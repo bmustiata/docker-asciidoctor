@@ -8,3 +8,9 @@ asciidoctor-pdf:
   files:
     README.adoc: "Asciidoctor PDF: **VERSION$$"
 
+asciidoctor-ebook3:
+  version: $(docker run -it --rm bmst/asciidoctor asciidoctor-epub3 --version | grep Asciidoctor | cut -f 3 -d\ )
+  files:
+    README.adoc: "Asciidoctor EPUB3: **VERSION$$"
+
+

@@ -2,17 +2,6 @@
 
 Versions bundled:
 
-Asciidoctor: 1.5.8
-Asciidoctor PDF: 1.5.0.alpha.17.dev
-
-[source,sh]
------------------------------------------------------------------------------
-apt-get update -y && \
-apt-get install -y \
-    asciidoctor-doc \
-    ruby-asciidoctor \
-    ruby-asciidoctor-plantuml \
-    ruby-asciidoctor-pdf && \
-gem install asciidoctor-diagram asciidoctor-plantuml
-
------------------------------------------------------------------------------
+Asciidoctor: 2.0.10
+Asciidoctor PDF: 1.5.0.beta.1
+Asciidoctor EPUB3: 1.5.0.alpha.9
