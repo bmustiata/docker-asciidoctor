@@ -1,0 +1,10 @@
+asciidoctor:
+  version: $(docker run -it --rm bmst/asciidoctor asciidoctor --version | grep Asciidoctor | cut -f 2 -d\ )
+  files:
+    README.adoc: "Asciidoctor: **VERSION$$"
+
+asciidoctor-pdf:
+  version: $(docker run -it --rm bmst/asciidoctor asciidoctor-pdf --version | grep Asciidoctor | cut -f 3 -d\ )
+  files:
+    README.adoc: "Asciidoctor PDF: **VERSION$$"
+
