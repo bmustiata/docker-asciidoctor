@@ -2,6 +2,6 @@
 
 Versions bundled:
 
-Asciidoctor: 
+Asciidoctor: 2.0.10
 Asciidoctor PDF: 1.5.0.beta.3
 Asciidoctor EPUB3: 1.5.0.alpha.9
