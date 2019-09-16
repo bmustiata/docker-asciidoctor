@@ -5,6 +5,6 @@ RUN apt-get update -y && \
     echo "gem: --bindir /usr/bin" >> ~/.gemrc && \
     gem install pkg-config && \
     NOKOGIRI_USE_SYSTEM_LIBRARIES=1 gem install asciidoctor-epub3 asciidoctor-pdf --pre && \
-    gem install asciidoctor asciidoctor-diagram asciidoctor-plantuml pygments.rb coderay
+    gem install asciidoctor asciidoctor-diagram asciidoctor-plantuml pygments.rb coderay asciidoctor-rouge
 
 ENV GRAPHVIZ_DOT=/usr/bin/dot
