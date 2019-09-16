@@ -1,15 +1,15 @@
 asciidoctor:
-  version: $(docker run -it --rm bmst/asciidoctor asciidoctor --version | grep Asciidoctor | cut -f 2 -d\ )
+  version: $(docker run -it --rm bmst/docker-asciidoctor asciidoctor --version | grep Asciidoctor | cut -f 2 -d\ )
   files:
     README.adoc: "Asciidoctor: **VERSION$$"
 
 asciidoctor-pdf:
-  version: $(docker run -it --rm bmst/asciidoctor asciidoctor-pdf --version | grep Asciidoctor | cut -f 3 -d\ )
+  version: $(docker run -it --rm bmst/docker-asciidoctor asciidoctor-pdf --version | grep Asciidoctor | cut -f 3 -d\ )
   files:
     README.adoc: "Asciidoctor PDF: **VERSION$$"
 
 asciidoctor-ebook3:
-  version: $(docker run -it --rm bmst/asciidoctor asciidoctor-epub3 --version | grep Asciidoctor | cut -f 3 -d\ )
+  version: $(docker run -it --rm bmst/docker-asciidoctor asciidoctor-epub3 --version | grep Asciidoctor | cut -f 3 -d\ )
   files:
     README.adoc: "Asciidoctor EPUB3: **VERSION$$"
 
